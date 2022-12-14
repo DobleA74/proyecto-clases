@@ -8,8 +8,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DobleA74/proyecto-clases.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DobleA74/proyecto-clases/issues"
+  },
+  "homepage": "https://github.com/DobleA74/proyecto-clases#readme",
+  "description": ""
 }
