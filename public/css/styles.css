@@ -1,3 +1,15 @@
 body {
-    background-color: rgba(255,255,0,0.5);
+    background-color: #eac926;
+    font-family: 'Fira Sans', sans-serif
+    font-size 12px;
+    
+}
+h1{
+    font-size: 24px;
+}
+#precio{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
 }
