@@ -1,7 +1,7 @@
 body {
     background-color: #eac926;
-    font-family: 'Fira Sans', sans-serif
-    font-size 12px;
+    font-family: 'roboto';
+    font-size: 12px;  
     
 }
 h1{
@@ -10,6 +10,27 @@ h1{
 #precio{
     font-size: 18px;
 }
-p{
+body p{
     font-size: 16px;
+}
+img{
+    border: 5px rgb(34, 0, 255);
+}
+.burger-menu{
+    background-color: blue;
+    padding: 8px white;
+    text-align: center;
+    size-adjust: 1;
+}
+.centrar-texto{
+    text-align: center;
+    border: 1px white;
+}
+footer{
+    text-align: center;
+
+}
+footer div{
+    size: 2em;
+    size-adjust: 2em;
 }
