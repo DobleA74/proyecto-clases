@@ -20,20 +20,6 @@ footer p{
 h4{
     font-size: 18px;
 }
-.burguer-menu{
-    background-color: blue;
-    padding: 0;
-    text-align: center;
-    font-size: 24px;
-    width: 50px;
-}
-.barra{
-    color: white;
-    padding: 0;
-    text-align: center;
-    font-size: 24px;
-    width: 50px;
-}
 footer{
     font-family: 'roboto';
     background-color: white;
@@ -48,4 +34,15 @@ footer{
 footer h4{
     font-size: 18px;
     font-weight:bolder;
+}
+.burguer-menu{
+    display: inline-block;
+    background-color: #1259c3;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.hambContenedor{
+    text-align: center;
 }
