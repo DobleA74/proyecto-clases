@@ -1,36 +1,51 @@
 body {
     background-color: #eac926;
     font-family: 'roboto';
-    font-size: 12px;  
-    
+    font-size: 12px;   
 }
 h1{
     font-size: 24px;
+    font-family: 'roboto';
 }
-#precio{
+h5{
     font-size: 18px;
 }
-body p{
+p{
     font-size: 16px;
 }
-img{
-    border: 5px rgb(34, 0, 255);
+footer p{
+    font-family: 'roboto';
+    font-size: 12px;
 }
-.burger-menu{
+h4{
+    font-size: 18px;
+}
+.burguer-menu{
     background-color: blue;
-    padding: 8px white;
+    padding: 0;
     text-align: center;
-    size-adjust: 1;
+    font-size: 24px;
+    width: 50px;
 }
-.centrar-texto{
+.barra{
+    color: white;
+    padding: 0;
     text-align: center;
-    border: 1px white;
+    font-size: 24px;
+    width: 50px;
 }
 footer{
+    font-family: 'roboto';
+    background-color: white;
     text-align: center;
-
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
-footer div{
-    size: 2em;
-    size-adjust: 2em;
+.desplegable{ 
+    font-size: 2em;
+    color: blue; 
+}
+footer h4{
+    font-size: 18px;
+    font-weight:bolder;
 }
