@@ -1,4 +1,6 @@
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing :border-box;
 }
 header{
@@ -97,13 +99,13 @@ footer h6{
 .hambContenedor{
     text-align: center;
 }
-article{
+.contenedor{
     margin: auto;
     background-color: white;
     width: 90%;
     text-align: center;
  }
-.article-box{
+.product{
     border-top: solid 1px #ebebeb;
     padding: 15px;
     text-align: center;
@@ -132,6 +134,7 @@ article{
      margin: 0;
      padding: 0;
     }
+
 }
 @media(min-width: 769px){
     article{
