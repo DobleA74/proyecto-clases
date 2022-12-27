@@ -3,8 +3,9 @@
     padding: 0px;
     box-sizing :border-box;
 }
-header{
+.main-header{
     background-color: #eac926;
+    padding: 20px;
 }
 body {
     font-family: 'roboto', sans-serif;
@@ -17,14 +18,31 @@ main {
     background-color: #ebebeb;
 }
 .logodisplay{
-    margin-top: 20px;
-    margin-left: 20px;
     padding: 5px;
-    width: 120px;
+    width: 200px;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
 }
 .title{
     text-align: center;
     font-size: 12px;
+    font-weight: 800;
 }
 .searchbar{
     padding: 1px;
@@ -33,24 +51,38 @@ main {
     font-size: 15px;
     margin-right: 0px;
 }
-
 .button{
     padding: 1px;
-}
-ul{
-    font-size: 0px;
-    
 }
 .titulares{
     font-size: 24px;   
     padding-left: 7%;
 }
 .precios{
+    flex-grow: 0.3;
     font-size: 18px;
-    margin: 1px;
-    padding: 10px;
+    font-weight: 800px;
+}
+.truck{
+    display: flex-end;
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: -10px;
+    margin-right: 35px;
+}
+.circulo{
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    color: #39b54a;
+    padding: 8px;
+    align-items: baseline;
 }
 .descuentos{
+    flex-grow: 0.7;
     font-size: 16px;
     margin: 2px;
     color: #39b54a;
@@ -59,6 +91,7 @@ ul{
     font-size: 0px;
     font-weight: bolder;
     color: #666;
+    margin-top: 10px;
 }
 footer{
     background-color:white
@@ -88,56 +121,94 @@ footer h6{
     color: #1259c3;
     margin-bottom: 10px;
 }
-.burguer-menu{
-    display: inline-block;
+.burguer-button{
+    display: block;
     background-color: #1259c3;
     color: white;
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-.hambContenedor{
+    padding: 15px 0;
+    max-width: 50px;
+    border-radius: 8px;
     text-align: center;
+    font-size: 18px;
+    margin: auto;
 }
+
 .contenedor{
     margin: auto;
     background-color: white;
     width: 90%;
-    text-align: center;
+    
  }
 .product{
+    
     border-top: solid 1px #ebebeb;
     padding: 15px;
-    text-align: center;
     border-bottom: solid 10 px #ebebeb;
 }
-.circulo{
-    width: 40px;
-    height: 40px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: solid 1px #39b54a;
-    color: #39b54a;
-    padding: 8px;
+.alinear{
+    display: flex;
+    margin-bottom: 15px;
+    max-width: 150px;
+    
+
 }
 @media (min-width: 361px){
     .descrip{
         font-size: 16px;
+        margin: auto;
         margin-bottom: 10px;
     }
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    ul{
-     font-size: 12px;
-     margin: 0;
-     padding: 0;
     }
 
 }
 @media(min-width: 769px){
     article{
       box-shadow:none
+    }
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burguer-button{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+}
+@media (min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .main-navbar{
+        margin: 0 10 px; 
+    }
+    .copy-header{
+        max-width: none;
+        text-align: right;
+        margin: 0;
+    }
+    .main-navbar{
+        margin-top: 40px;
+    }
+    .main-navbar a{
+        font-size: 16px;
     }
 }
