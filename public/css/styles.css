@@ -21,6 +21,9 @@ main {
     padding: 5px;
     width: 200px;
 }
+.main-header-top-bar img{
+    width: 50%;
+}
 .copy-header{
     font-weight: 400;
     text-align: center;
@@ -45,6 +48,7 @@ main {
     font-weight: 800;
 }
 .searchbar{
+    width: 50%;
     padding: 1px;
     margin: 10px;
     margin-top: 1px;
@@ -53,15 +57,11 @@ main {
 }
 .button{
     padding: 1px;
+    margin-bottom: 20px;
 }
 .titulares{
     font-size: 24px;   
     padding-left: 7%;
-}
-.precios{
-    flex-grow: 0.3;
-    font-size: 18px;
-    font-weight: 800px;
 }
 .truck{
     display: flex-end;
@@ -86,6 +86,12 @@ main {
     font-size: 16px;
     margin: 2px;
     color: #39b54a;
+    font-weight: 6em;
+}
+.precios{
+    flex-grow: 0.3;
+    font-size: 16px;
+    font-weight: 5em;
 }
 .descrip{
     font-size: 0px;
@@ -132,25 +138,34 @@ footer h6{
     font-size: 18px;
     margin: auto;
 }
-
 .contenedor{
     margin: auto;
     background-color: white;
-    width: 90%;
-    
+    width: 100%;
+    max-width: 1200px
  }
-.product{
-    
+ .contenedor .card{
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 10 px #ebebeb;
+    margin: auto;
+    text-align: center; 
+    width: 180px; 
+    height: fit-content;
+}
+.contenedor .card img{
+    width: 100x;
+    height: 125px;
+
+}
+.product{  
     border-top: solid 1px #ebebeb;
     padding: 15px;
-    border-bottom: solid 10 px #ebebeb;
+    border-bottom: solid 10 px #ebebeb
 }
 .alinear{
     display: flex;
     margin-bottom: 15px;
-    max-width: 150px;
-    
-
+    max-width: 150px
 }
 .create-form{
     padding: 20px 15px;
@@ -177,21 +192,32 @@ footer h6{
 }
 @media (min-width: 361px){
     .descrip{
-        font-size: 16px;
+        font-size: 14px;
         margin: auto;
         margin-bottom: 10px;
     }
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .contenedor{
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+ }
+ .contenedor .card{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+ .main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+ }
     }
-
-}
 @media(min-width: 769px){
     article{
       box-shadow:none
     }
     .main-header-top-bar{
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
     .copy-header{
