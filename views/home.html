@@ -49,7 +49,44 @@
     </header>
     <div><img src="/images/img-home-banner.jpg" alt="img-home-banner" width="100%"></div>
     <main>
-
+        <!-- formulario-->
+        <form action="/crear-prodcuto" method="POST" class="create-form">
+            <div class="control-formulario">
+                <label>Nombre del producto</label>
+                <input type="text" name="nombre" placeholder="Televisor, Table, etc." class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Precio del producto</label>
+                <input type="text" name="precio"class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Categoria:</label>
+                <select name="categoria" placeholder="seleccione" class="control">
+                    <option value="hogar">Hogar</option>
+                    <option value="electro">Electro</option>
+                    <option value="indumentaria">Indumentaria</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Ciudad:</label>
+                <select name="ciudad" class="control">
+                    <option value="ba">Buenos Aires</option>
+                    <option value="ro">Rosario</option>
+                    <option value="me">Mendoza</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label>Descripcion:</label>
+                <textarea name="descripcion"></textarea>
+            </div>
+            <button type="submit" class="boton-formulario">Guardar</button>
+            <button type="reset" class="boton-formulario">Borrar</button>
+            <div class="control-formulario">
+                <label>Esta en oferta</label>
+                <input type="radio" name="oferta">
+            </div>
+            
+        </form>
         <h1 class="titulares">Basado en tu ultima visita</h1>
         <article class="contenedor">
             <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" width="100%" height="100%">

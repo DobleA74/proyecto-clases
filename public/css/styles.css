@@ -152,6 +152,29 @@ footer h6{
     
 
 }
+.create-form{
+    padding: 20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    width: 100%;
+    padding: 8px;
+}
+.boton-formulario{
+    background-color:#39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 @media (min-width: 361px){
     .descrip{
         font-size: 16px;
