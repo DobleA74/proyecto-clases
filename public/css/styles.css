@@ -61,7 +61,7 @@ main {
 }
 .titulares{
     font-size: 24px;   
-    padding-left: 7%;
+    text-align: center;
 }
 .truck{
     display: flex-end;
@@ -140,18 +140,21 @@ footer h6{
 }
 .contenedor{
     margin: auto;
-    background-color: white;
+    background-color: none;
     width: 100%;
     max-width: 1200px;
+    margin-bottom: 10px;
  }
  .contenedor .card{
     border-top: solid 1px #ebebeb;
+    background-color: white;
     border-bottom: solid 10 px #ebebeb;
     margin: 1.2px 7.375px;
     text-align: center; 
     width: 180px; 
     height: 250px;
     padding: 8px; ;
+    margin-bottom: 10px;
 }
 .contenedor .card img{
     width: 100x;
@@ -200,7 +203,7 @@ footer h6{
     }
     .contenedor{
     margin: auto;
-    background-color: white;
+    background-color: none;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
