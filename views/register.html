@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+     <form action="/register" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label></label>
+            <input type="text" name="nombre" placeholder="Nombre y apellido" class="control">
+        </div>
+        <div class="control-formulario">
+            <label></label>
+            <input type="text" name="usuario" placeholder="Nombre de Usuario" class="control">
+        </div>
+        <div class="control-formulario">
+            <label for="date">Fecha de nacimiento</label>
+            <br>
+            <input type="date" name="date">
+            <br>
+            <input type="text" name="adress" placeholder="Domicilio">
+            <br>
+            <label for="profile"> Perfil del usuario</label>
+            <br>
+            <input type="radio" name="profile">Comprador
+            <input type="radio" name="profile">Vendedor
+            <br>
+            <label for="interest">Intereses</label>
+            <br>
+            <input type="checkbox" name="interest" value="cat1"> Electro
+            <br>
+            <input type="checkbox" name="interest" value="cat2"> Moda    
+            <br>
+            <input type="checkbox" name="interest" value="cat3"> Hogar
+            <br>
+            <input type="checkbox" name="interest" value="cat4"> Jugueteria
+            <br>
+            <input type="checkbox" name="interest" value="cat5"> Vida sana
+            <br>
+            <label for="picture">Foto de Usuario</label>
+            <br>
+            <input type="file" name="picture">
+            <br>
+            <input type="password" name="password" placeholder="Ingrese contraseña">
+            <br>
+            <input type="password" name="password" placeholder="Confirme contraseña">
+        </div>
+    
+        <a href="../">Guardar</a>
+        <button type="reset" class="boton-formulario" value="delete">Borrar</button>
+</body>
+</html>

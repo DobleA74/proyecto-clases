@@ -142,15 +142,16 @@ footer h6{
     margin: auto;
     background-color: white;
     width: 100%;
-    max-width: 1200px
+    max-width: 1200px;
  }
  .contenedor .card{
     border-top: solid 1px #ebebeb;
     border-bottom: solid 10 px #ebebeb;
-    margin: auto;
+    margin: 1.2px 7.375px;
     text-align: center; 
     width: 180px; 
-    height: fit-content;
+    height: 250px;
+    padding: 8px; ;
 }
 .contenedor .card img{
     width: 100x;
@@ -195,6 +196,7 @@ footer h6{
         font-size: 14px;
         margin: auto;
         margin-bottom: 10px;
+        padding: 5px;
     }
     .contenedor{
     margin: auto;

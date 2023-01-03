@@ -38,8 +38,8 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="right-navbar">
-                <li><a href="#">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="#">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
@@ -52,43 +52,6 @@
 
     <div><img src="/images/img-home-banner.jpg" alt="img-home-banner" width="100%"></div>
     <main>
-        <!-- formulario-->
-        <form action="/crear-prodcuto" method="POST" class="create-form">
-            <div class="control-formulario">
-                <label>Nombre del producto</label>
-                <input type="text" name="nombre" placeholder="Televisor, Table, etc." class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Precio del producto</label>
-                <input type="text" name="precio"class="control">
-            </div>
-            <div class="control-formulario">
-                <label>Categoria:</label>
-                <select name="categoria" placeholder="seleccione" class="control">
-                    <option value="hogar">Hogar</option>
-                    <option value="electro">Electro</option>
-                    <option value="indumentaria">Indumentaria</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Ciudad:</label>
-                <select name="ciudad" class="control">
-                    <option value="ba">Buenos Aires</option>
-                    <option value="ro">Rosario</option>
-                    <option value="me">Mendoza</option>
-                </select>
-            </div>
-            <div class="control-formulario">
-                <label>Descripcion:</label>
-                <textarea name="descripcion"></textarea>
-            </div>
-            <button type="submit" class="boton-formulario">Guardar</button>
-            <button type="reset" class="boton-formulario">Borrar</button>
-            <div class="control-formulario">
-                <label>Esta en oferta</label>
-                <input type="radio" name="oferta">
-            </div>
-            
         </form>
         <h1 class="titulares">Basado en tu ultima visita</h1>
         <article class="contenedor">
