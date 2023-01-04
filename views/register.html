@@ -1,38 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Register</title>
 </head>
+
 <body>
-     <form action="/register" method="POST" class="create-form">
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logodisplay">
+            <section>
+                <input class="searchbar" type="search" name="busquedaDeProductos"
+                    placeholder="Buscar productos, marcas...">
+                <button class="button" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </section>
+
+            <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </h2>
+        </div>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="/register">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#" class="burguer-button">
+                <i class="fas fa-bars"></i>
+            </a>
+    </header>
+    <form action="/register" method="POST" class="create-form">
         <div class="control-formulario">
             <label></label>
-            <input type="text" name="nombre" placeholder="Nombre y apellido" class="control">
+            <input class="reglon" type="text" name="nombre" placeholder="Nombre y apellido" class="control">
         </div>
         <div class="control-formulario">
             <label></label>
-            <input type="text" name="usuario" placeholder="Nombre de Usuario" class="control">
+            <input class="reglon" type="text" name="usuario" placeholder="Nombre de Usuario" class="control">
         </div>
         <div class="control-formulario">
-            <label for="date">Fecha de nacimiento</label>
+            <label class="titureg" for="date">Fecha de nacimiento</label>
             <br>
-            <input type="date" name="date">
+            <div class="control-formulario">
+                <input class="reglon" type="date" name="date">
+            </div>
             <br>
-            <input type="text" name="adress" placeholder="Domicilio">
+            <div class="control-formulario">
+                <input class="reglon" type="text" name="adress" placeholder="Domicilio">
+                <br>
+            </div>
+            <label class="titureg" for="profile"> Perfil del usuario</label>
             <br>
-            <label for="profile"> Perfil del usuario</label>
+            <input class="botonComp" type="radio" name="profile">Comprador
+            <input class="botonComp" type="radio" name="profile">Vendedor
             <br>
-            <input type="radio" name="profile">Comprador
-            <input type="radio" name="profile">Vendedor
             <br>
-            <label for="interest">Intereses</label>
+            <div class="control-fomrulario">
+                <label class="titureg" for="interest">Intereses</label>
+            </div>
             <br>
             <input type="checkbox" name="interest" value="cat1"> Electro
             <br>
-            <input type="checkbox" name="interest" value="cat2"> Moda    
+            <input type="checkbox" name="interest" value="cat2"> Moda
             <br>
             <input type="checkbox" name="interest" value="cat3"> Hogar
             <br>
@@ -44,12 +93,14 @@
             <br>
             <input type="file" name="picture">
             <br>
-            <input type="password" name="password" placeholder="Ingrese contraseña">
             <br>
-            <input type="password" name="password" placeholder="Confirme contraseña">
+            <input class="reglon" type="password" name="password" placeholder="Ingrese contraseña">
+            <br>
+            <input class="reglon" type="password" name="password" placeholder="Confirme contraseña">
         </div>
-    
+
         <a href="../">Guardar</a>
         <button type="reset" class="boton-formulario" value="delete">Borrar</button>
 </body>
+
 </html>
