@@ -52,21 +52,26 @@
     <form action="/register" method="POST" class="create-form">
         <div class="control-formulario">
             <label></label>
-            <input class="reglon" type="text" name="nombre" placeholder="Nombre y apellido" class="control">
+            <input class="reglon" type="text" name="nombre" placeholder="Nombre y apellido" class="control"
+                minlength="4">
+            <span class="validity"></span>
         </div>
         <div class="control-formulario">
             <label></label>
-            <input class="reglon" type="text" name="usuario" placeholder="Nombre de Usuario" class="control">
+            <input class="reglon" type="text" name="usuario" placeholder="Nombre de Usuario" class="control"
+                minlength="4" maxlength="14">
+            <span class="validity"></span>
         </div>
         <div class="control-formulario">
             <label class="titureg" for="date">Fecha de nacimiento</label>
             <br>
             <div class="control-formulario">
-                <input class="reglon" type="date" name="date">
+                <input class="reglon" type="date" name="date" min="1950-01-01" max="2022-12-31">
             </div>
             <br>
             <div class="control-formulario">
-                <input class="reglon" type="text" name="adress" placeholder="Domicilio">
+                <input class="reglon" type="text" name="adress" placeholder="Domicilio" minlength="4">
+                <span class="validity"></span>
                 <br>
             </div>
             <label class="titureg" for="profile"> Perfil del usuario</label>
@@ -89,14 +94,28 @@
             <br>
             <input type="checkbox" name="interest" value="cat5"> Vida sana
             <br>
-            <label for="picture">Foto de Usuario</label>
             <br>
-            <input type="file" name="picture">
+            <div class="control-formulario">
+                <label class="titureg" for="picture">Foto de Usuario</label>
+            </div>
+            <input type="file" name="picture" accept=".jpg">
             <br>
             <br>
-            <input class="reglon" type="password" name="password" placeholder="Ingrese contraseña">
-            <br>
-            <input class="reglon" type="password" name="password" placeholder="Confirme contraseña">
+            <div class="control-formulario">
+                <input class="reglon" type="password" name="password" placeholder="Ingrese contraseña" required size="45"
+                pattern="[a-z]{4,8}">
+                <span class="validity"></span>
+                <br>
+                <p class="aclara">Los nombres de usuario deben estar en minúsculas y tener entre 4 y 8 caracteres de longitud.</p>
+                
+            </div>
+            <div class="control-formulario">
+                <input class="reglon" type="password" name="password" placeholder="Confirme contraseña" required size="45"
+                pattern="[a-z]{4,8}">
+                <span class="validity"></span>
+                <br>
+                <p class="aclara">Los nombres de usuario deben estar en minúsculas y tener entre 4 y 8 caracteres de longitud.</p>
+            </div>
         </div>
 
         <a href="../">Guardar</a>

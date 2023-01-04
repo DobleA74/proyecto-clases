@@ -19,10 +19,10 @@ main {
 }
 .logodisplay{
     padding: 5px;
-    width: 200px;
+    width: 40vw;
 }
 .main-header-top-bar img{
-    width: 50%;
+    width: 40vw;
 }
 .copy-header{
     font-weight: 400;
@@ -211,6 +211,45 @@ footer h6{
 .botonComp{
     font-size: 12px;
     font-size: bolder;
+}
+input + span {
+    padding-right: 30px;
+  }
+  
+  input:invalid+span:after {
+    position: absolute; content: '✖';
+    padding-left: 5px;
+  }
+  
+  input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+  }
+  .aclara{
+    font-size: 10px;
+    color: #666;
+  }
+  .contenedor-form{
+    margin-top: 12px;
+    text-align: center;
+    border-radius: 0.375rem;
+  }
+  .reglon2{
+    border-radius: 0.375rem;
+    border: 0;
+    padding-left: 10px;
+    text-align: left;
+    border-color: #ffffff;
+    font-style: inherit;
+    font-size: 12px;
+    width: 340px;
+    height: 25px;
+    background: white;
+    overflow: hidden;
+}
+.botonsend{
+    
 }
 @media (min-width: 361px){
     .descrip{
