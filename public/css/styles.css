@@ -6,11 +6,16 @@
 .main-header{
     background-color: #eac926;
     padding: 20px;
+    top: 0;
 }
+
 body {
     font-family: 'roboto', sans-serif;
     margin-top: auto;
     background-color: #ebebeb;
+}
+section{
+    flex-grow: 0.5;
 }
 main {
     width: 90%;
@@ -19,13 +24,12 @@ main {
 }
 .logodisplay{
     padding: 5px;
-    width: 40vw;
+    flex-grow: 0.5;
 }
 .main-header-top-bar img{
     width: 40vw;
 }
 .copy-header{
-    font-weight: 400;
     text-align: center;
 }
 .main-navbar{
@@ -59,18 +63,31 @@ main {
     padding: 1px;
     margin-bottom: 20px;
 }
+.buscador{
+    width: 50vw;
+}
 .titulares{
     font-size: 24px;   
     text-align: center;
 }
 .truck{
-    display: flex-end;
+    display: block;
     font-size: 16px;
     text-align: right;
-    margin-bottom: -10px;
-    margin-right: 35px;
+    position: relative;
+    right: 3px;
+    /* margin-bottom: -10px;
+    margin-right: 35px; */
+    transition: all 450ms;
+}
+.fa-truck{
+    transition: all 450ms;
+}
+.fa-truck:hover{
+    transform: rotate(-90deg);
 }
 .circulo{
+    position: relative;
     width: 40px;
     height: 40px;
     -moz-border-radius: 50%;
@@ -98,6 +115,7 @@ main {
     font-weight: bolder;
     color: #666;
     margin-top: 10px;
+    transition: all 450ms;
 }
 footer{
     background-color:white
@@ -155,6 +173,11 @@ footer h6{
     height: 250px;
     padding: 8px; ;
     margin-bottom: 10px;
+    transition: all 450ms ;
+}
+.contenedor .card:hover{
+    background-color: rgba(206, 201, 201, 0.611);
+   
 }
 .contenedor .card img{
     width: 100x;
@@ -172,7 +195,7 @@ footer h6{
     max-width: 150px
 }
 .create-form{
-    padding: 20px 15px;
+    margin-top: 260px;
 }
 .control-formulario{
     margin-bottom: 15px;
@@ -194,15 +217,7 @@ footer h6{
     padding: 5px 10px;
     border-radius: 5px;
 }
-.reglon{
-    border-radius: 4px;
-    padding-left: 10px;
-    text-align: left;
-    border-color: #ffffff;
-    font-style: inherit;
-    font-size: 12px;
-    width: 200px;
-}
+
 .titureg{
     font-weight:bolder;
     font-style: oblique;
@@ -212,20 +227,7 @@ footer h6{
     font-size: 12px;
     font-size: bolder;
 }
-input + span {
-    padding-right: 30px;
-  }
-  
-  input:invalid+span:after {
-    position: absolute; content: '✖';
-    padding-left: 5px;
-  }
-  
-  input:valid+span:after {
-    position: absolute;
-    content: '✓';
-    padding-left: 5px;
-  }
+
   .aclara{
     font-size: 10px;
     color: #666;
@@ -235,6 +237,22 @@ input + span {
     text-align: center;
     border-radius: 0.375rem;
   }
+  .registermain{
+    padding-left: 1px;
+  }
+  .reglon{
+    border-radius: 0.375rem;
+    border: 0;
+    height: 25px;
+    width: 300px;
+    padding-left: 10px;
+    text-align: left;
+    border-color: #ffffff;
+    font-style: inherit;
+    font-size: 12px;
+    background: white;
+    overflow: hidden;
+}
   .reglon2{
     border-radius: 0.375rem;
     border: 0;
@@ -243,20 +261,38 @@ input + span {
     border-color: #ffffff;
     font-style: inherit;
     font-size: 12px;
-    width: 340px;
+    width: 300px;
     height: 25px;
     background: white;
     overflow: hidden;
+}.contbotonsend{
+    
+    text-align: center;
+    margin-bottom: 20px;
 }
 .botonsend{
-    
+    text-align: center;
+    width: 340px;
+    border-radius: 0.375rem;
+    background-color: #1259c3;
+    color: #ffffff;
+    height: 24px;
+    font-style: inherit;
+    transition: all 450ms;
+}
+.botonsend:hover{
+    background-color: #0022AA;
 }
 @media (min-width: 361px){
     .descrip{
-        font-size: 14px;
+        font-size: 0px;
         margin: auto;
         margin-bottom: 10px;
         padding: 5px;
+        transition: all 500ms;
+    }
+    .descrip:hover{
+        font-size: 14px;
     }
     .contenedor{
     margin: auto;
@@ -283,7 +319,6 @@ input + span {
         justify-content: space-between;
     }
     .copy-header{
-        max-width: 350px;
         text-align: right;
     }
     .burguer-button{
@@ -302,7 +337,6 @@ input + span {
 }
 @media (min-width: 1200px){
     .main-header-top-bar, .main-navbar{
-        max-width: 1200px;
         margin: auto;
     }
     .main-header-top-bar{
@@ -312,7 +346,6 @@ input + span {
         margin: 0 10 px; 
     }
     .copy-header{
-        max-width: none;
         text-align: right;
         margin: 0;
     }
@@ -321,5 +354,11 @@ input + span {
     }
     .main-navbar a{
         font-size: 16px;
+    }
+    .contenedor-footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
     }
 }
