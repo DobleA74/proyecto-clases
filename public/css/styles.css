@@ -83,7 +83,7 @@ main {
 .fa-truck{
     transition: all 450ms;
 }
-.fa-truck:hover{
+.contenedor .card .fa-truck:hover{
     transform: rotate(-90deg);
 }
 .circulo{
@@ -177,12 +177,10 @@ footer h6{
 }
 .contenedor .card:hover{
     background-color: rgba(206, 201, 201, 0.611);
-   
 }
 .contenedor .card img{
     width: 100x;
     height: 125px;
-
 }
 .product{  
     border-top: solid 1px #ebebeb;
