@@ -22,11 +22,10 @@
         <div class="main-header-top-bar">
             <img src="/images/logo-mercado-liebre.svg" class="logodisplay">
             <section class="searchbar-contenedor">
-                <input class="searchbar" type="search" name="busquedaDeProductos"
-                    placeholder="Buscar productos, marcas...">
-                <button class="button" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <form action="/search-product"  method="POST" class="searchbar">
+                <input type="text" id="search" placeholder="Buscar productos, marcas . . ." class="input-searchbar">
+                <button class="" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button> 
             </section>
-
             <h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i>
                 Compra en cuotas y sin tarjeta de credito
             </h2>

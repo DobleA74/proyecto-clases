@@ -1,12 +1,7 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    box-sizing :border-box;
-}
-.main-header{
-    background-color: #eac926;
-    padding: 20px;
-    top: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,63 +9,101 @@ body {
     margin-top: auto;
     background-color: #ebebeb;
 }
-section{
+
+section {
     flex-grow: 0.5;
 }
+
 main {
     width: 90%;
     margin: auto;
     background-color: #ebebeb;
 }
-.logodisplay{
-    padding: 5px;
-    flex-grow: 0.5;
+
+.main-header {
+    background-color: #eac926;
+    padding: 7x;
+    width: 100%;
 }
-.main-header-top-bar img{
+
+.logodisplay {
+    display: block;
+    padding: 5px;
+    max-width: 150px;
+}
+
+.main-header-top-bar img {
     width: 40vw;
 }
-.copy-header{
+
+.copy-header {
     text-align: center;
 }
-.main-navbar{
+
+.main-navbar {
     display: none;
 }
+
 .main-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.main-navbar a{
+
+.main-navbar a {
     text-decoration: none;
     color: #222222;
     display: inline-block;
     padding: 5px 0px;
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 12px;
     font-weight: 800;
 }
-.searchbar{
-    width: 80%;
-    padding: 1px;
-    margin: 10px;
-    margin-top: 1px;
-    font-size: 15px;
-    margin-right: 0px;
+.searchbar-contenedor{
+    flex-grow: 1;
+    text-align: center;
 }
-.button{
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 7px rgb(105 105 105);    
+}
+.input-searchbar{
+    width: 85%;
+    background-color:#ebebeb;
+    border: none;
+}
+.fa-magnifying-glass {
+    font-size: 80%;
+    text-align: center;
+    background-color: #ebebeb;
+    border-left: solid rgba(102,102,102,0.4) 2px;
+    margin: 0px;
+    padding: 4px;
+}
+.button {
     padding: 1px;
     margin-bottom: 20px;
 }
-.buscador{
+
+.buscador {
     width: 50vw;
 }
-.titulares{
-    font-size: 24px;   
+
+.titulares {
+    font-size: 24px;
     text-align: center;
 }
-.truck{
+
+.truck {
     display: block;
     font-size: 16px;
     text-align: right;
@@ -80,13 +113,16 @@ main {
     margin-right: 35px; */
     transition: all 450ms;
 }
-.fa-truck{
+
+.fa-truck {
     transition: all 450ms;
 }
-.contenedor .card .fa-truck:hover{
+
+.contenedor .card .fa-truck:hover {
     transform: rotate(-90deg);
 }
-.circulo{
+
+.circulo {
     position: relative;
     width: 40px;
     height: 40px;
@@ -98,36 +134,41 @@ main {
     padding: 8px;
     align-items: baseline;
 }
-.descuentos{
+
+.descuentos {
     flex-grow: 0.7;
     font-size: 16px;
     margin: 2px;
     color: #39b54a;
     font-weight: 6em;
 }
-.precios{
+
+.precios {
     flex-grow: 0.3;
     font-size: 16px;
     font-weight: 5em;
 }
-.descrip{
+
+.descrip {
     font-size: 0px;
     font-weight: bolder;
     color: #666;
     margin-top: 10px;
     transition: all 450ms;
 }
-footer{
-    background-color:white
-    ;
+
+footer {
+    background-color: white;
 }
-footer p{
+
+footer p {
     text-align: center;
     font-size: 12px;
     margin-top: 0px;
     margin-bottom: 50px;
 }
-footer h4{
+
+footer h4 {
     text-align: center;
     color: black;
     font-weight: bolder;
@@ -135,17 +176,20 @@ footer h4{
     margin-top: 0px;
     padding: 0px;
 }
-footer h6{
+
+footer h6 {
     text-align: center;
 }
-.footericons{
+
+.footericons {
     font-size: 2em;
     text-align: center;
     width: 100%;
     color: #1259c3;
     margin-bottom: 10px;
 }
-.burguer-button{
+
+.burguer-button {
     display: block;
     background-color: #1259c3;
     color: white;
@@ -156,59 +200,71 @@ footer h6{
     font-size: 18px;
     margin: auto;
 }
-.contenedor{
+
+.contenedor {
     margin: auto;
     background-color: none;
     width: 100%;
     max-width: 1200px;
     margin-bottom: 10px;
- }
- .contenedor .card{
+}
+
+.contenedor .card {
     border-top: solid 1px #ebebeb;
     background-color: white;
     border-bottom: solid 10 px #ebebeb;
     margin: 1.2px 7.375px;
-    text-align: center; 
-    width: 180px; 
+    text-align: center;
+    width: 180px;
     height: 250px;
-    padding: 8px; ;
+    padding: 8px;
+    ;
     margin-bottom: 10px;
     transition: all 450ms;
 }
-.contenedor .card:hover{
+
+.contenedor .card:hover {
     background-color: rgba(206, 201, 201, 0.611);
 }
-.contenedor .card img{
+
+.contenedor .card img {
     width: 100x;
     height: 125px;
 }
-.product{  
+
+.product {
     border-top: solid 1px #ebebeb;
     padding: 15px;
     border-bottom: solid 10 px #ebebeb
 }
-.alinear{
+
+.alinear {
     display: flex;
     margin-bottom: 15px;
     max-width: 150px
 }
-.create-form{
+
+.create-form {
     margin-top: 260px;
 }
-.control-formulario{
+
+.control-formulario {
     margin-bottom: 15px;
 }
-.control-formulario label{
+
+.control-formulario label {
     margin-bottom: 5px;
     font-style: italic;
     display: block;
 }
-.control{
+
+.control {
     width: 100%;
     padding: 8px;
 }
-.boton-formulario{
-    background-color:#39b54a;
+
+.boton-formulario {
+    background-color: #39b54a;
     border: none;
     font-size: 20px;
     color: #ffff;
@@ -216,29 +272,33 @@ footer h6{
     border-radius: 5px;
 }
 
-.titureg{
-    font-weight:bolder;
+.titureg {
+    font-weight: bolder;
     font-style: oblique;
     color: black;
 }
-.botonComp{
+
+.botonComp {
     font-size: 12px;
     font-size: bolder;
 }
 
-  .aclara{
+.aclara {
     font-size: 10px;
     color: #666;
-  }
-  .contenedor-form{
+}
+
+.contenedor-form {
     margin-top: 12px;
     text-align: center;
     border-radius: 0.375rem;
-  }
-  .registermain{
+}
+
+.registermain {
     padding-left: 1px;
-  }
-  .reglon{
+}
+
+.reglon {
     border-radius: 0.375rem;
     border: 0;
     height: 25px;
@@ -251,7 +311,8 @@ footer h6{
     background: white;
     overflow: hidden;
 }
-  .reglon2{
+
+.reglon2 {
     border-radius: 0.375rem;
     border: 0;
     padding-left: 10px;
@@ -263,12 +324,14 @@ footer h6{
     height: 25px;
     background: white;
     overflow: hidden;
-}.contbotonsend{
-    
+}
+
+.contbotonsend {
     text-align: center;
     margin-bottom: 20px;
 }
-.botonsend{
+
+.botonsend {
     text-align: center;
     width: 340px;
     border-radius: 0.375rem;
@@ -278,82 +341,104 @@ footer h6{
     font-style: inherit;
     transition: all 450ms;
 }
-.botonsend:hover{
+
+.botonsend:hover {
     background-color: #0022AA;
 }
-@media (min-width: 361px){
-    .descrip{
+
+@media (min-width: 361px) {
+    .descrip {
         font-size: 0px;
         margin: auto;
         margin-bottom: 10px;
         padding: 5px;
         transition: all 500ms;
     }
-    .descrip:hover{
+
+    .descrip:hover {
         font-size: 14px;
     }
-    .contenedor{
-    margin: auto;
-    background-color: none;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
- }
- .contenedor .card{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
- }
- .main-header-top-bar{
-    display: flex;
-    flex-wrap: wrap;
- }
+
+    .contenedor {
+        margin: auto;
+        background-color: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-@media(min-width: 769px){
-    article{
-      box-shadow:none
+
+    .contenedor .card {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .main-header-top-bar{
+
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 769px) {
+    article {
+        box-shadow: none
+    }
+
+    .main-header-top-bar {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-    .copy-header{
+
+    .copy-header {
         text-align: right;
     }
-    .burguer-button{
+
+    .burguer-button {
         display: none;
     }
-    .main-navbar{
+
+    .main-navbar {
         display: flex;
         justify-content: space-between;
     }
-    .main-navbar ul{
+
+    .main-navbar ul {
         display: flex;
     }
-    .main-navbar li{
+
+    .main-navbar li {
         margin: 0 5px;
     }
 }
-@media (min-width: 1200px){
-    .main-header-top-bar, .main-navbar{
+
+@media (min-width: 1200px) {
+
+    .main-header-top-bar,
+    .main-navbar {
         margin: auto;
     }
-    .main-header-top-bar{
+
+    .main-header-top-bar {
         align-items: center;
     }
-    .main-navbar{
-        margin: 0 10 px; 
+
+    .main-navbar {
+        margin: 0 10 px;
     }
-    .copy-header{
+
+    .copy-header {
         text-align: right;
         margin: 0;
     }
-    .main-navbar{
+
+    .main-navbar {
         margin-top: 40px;
     }
-    .main-navbar a{
+
+    .main-navbar a {
         font-size: 16px;
     }
-    .contenedor-footer{
+
+    .contenedor-footer {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
